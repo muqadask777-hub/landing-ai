@@ -1,0 +1,708 @@
+/* Core Styling Rules matching Original video */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #222;
+}
+
+/* 1. Header Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.logo h2 {
+    font-size: 26px;
+    font-weight: 800;
+    color: #212529;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: #2cb572; /* Emerald Green look from original brand logo markup */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 25px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.nav-links a.active {
+    color: #1456cb;
+}
+
+.cart-btn {
+    background-color: #1456cb;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 20px;
+    font-weight: 700;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+/* 2. Full Width Top Hero Graphic Section */
+.hero-top-banner {
+    background: url('https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+}
+
+.hero-text-overlay {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 4px;
+    max-width: 450px;
+}
+
+.main-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1;
+    color: #111;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #1456cb;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/* 3. About Us */
+.about-section {
+    padding: 60px 10%;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 40px;
+}
+
+.section-title.centered {
+    text-align: center;
+}
+
+.section-title.text-blue {
+    color: #1456cb;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.about-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.card-tag {
+    font-size: 11px;
+    color: #888;
+    text-transform: uppercase;
+    display: block;
+    margin: 15px 0 5px 0;
+}
+
+.about-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.about-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.learn-more {
+    text-decoration: none;
+    color: #1456cb;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+/* 4. Mid Section Sale Banner */
+.mid-sale-banner {
+    background-color: #f7edea;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12%;
+    position: relative;
+    overflow: hidden;
+}
+
+.sale-overlay-content {
+    z-index: 5;
+}
+
+.we-are-glad {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #888;
+}
+
+.mid-sale-banner h2 {
+    font-size: 38px;
+    color: #1456cb;
+    margin: 10px 0 20px 0;
+    font-weight: 800;
+}
+
+.watch-now-btn {
+    background: #1456cb;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.huge-70 {
+    font-size: 18rem;
+    font-weight: 900;
+    color: rgba(220, 53, 69, 0.12);
+    position: absolute;
+    right: 8%;
+    bottom: -40px;
+}
+
+.off-text {
+    font-size: 4rem;
+}
+
+/* 5. Features Layout */
+.features-section {
+    padding: 80px 10%;
+    display: flex;
+}
+
+.features-left {
+    flex: 1;
+}
+
+.feat-tag {
+    font-size: 12px;
+    color: #888;
+    letter-spacing: 1px;
+}
+
+.features-left h2 {
+    font-size: 34px;
+    color: #1456cb;
+    margin-top: 5px;
+}
+
+.features-right {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.feat-box {
+    display: flex;
+    gap: 15px;
+}
+
+.feat-box i {
+    font-size: 24px;
+    color: #1456cb;
+    margin-top: 4px;
+}
+
+.feat-box h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.feat-box p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* 6. Product Showcase Hover Layout */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 10% 60px 10%;
+}
+
+.product-card {
+    text-align: center;
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.img-container:hover .hover-overlay {
+    opacity: 1;
+}
+
+.img-container:hover img {
+    transform: scale(1.05);
+}
+
+.inner-buy-btn {
+    background: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.product-card h4 {
+    font-size: 14px;
+    color: #444;
+}
+
+.price {
+    font-weight: 700;
+    color: #111;
+    margin-top: 5px;
+}
+
+/* 7. Newsletter Styling */
+.newsletter-section {
+    text-align: center;
+    padding: 60px 0;
+    background: #fdfdfd;
+    border-top: 1px solid #f0f0f0;
+}
+
+.newsletter-section h2 {
+    color: #1456cb;
+    font-size: 32px;
+}
+
+.news-sub {
+    font-size: 13px;
+    color: #666;
+    margin: 10px 0 25px 0;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 8px;
+}
+
+.search-icon {
+    color: #888;
+    margin-right: 10px;
+}
+
+.newsletter-form input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 15px;
+    background: transparent;
+}
+
+.subscribe-btn {
+    background: transparent;
+    border: none;
+    color: #1456cb;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* 8. Double Image Brand Gallery */
+.brand-gallery {
+    display: flex;
+    gap: 20px;
+    padding: 40px 10%;
+}
+
+.gallery-item {
+    position: relative;
+}
+
+.gallery-item.large {
+    flex: 2;
+}
+
+.gallery-right-stack {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.brand-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-item.large img {
+    height: 420px;
+}
+
+.gallery-item.small img {
+    height: 200px;
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery-overlay span {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+.gal-buy-btn {
+    background: #1456cb;
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* 9. Latest News Layout */
+.latest-news {
+    padding: 60px 10%;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.news-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.news-card h4 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* 10. Last Collection Grid Layer */
+.collection-section {
+    padding: 40px 10%;
+    position: relative;
+}
+
+.learn-more-top {
+    position: absolute;
+    right: 10%;
+    top: 45px;
+    color: #1456cb;
+    font-weight: 700;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.coll-box {
+    position: relative;
+}
+
+.coll-box img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.social-hover {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.coll-box:hover .social-hover {
+    opacity: 1;
+}
+
+.social-hover i {
+    background: white;
+    color: #333;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+/* 11. Testimonials Elements */
+.testimonials-section {
+    background: #f8f9fa;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.slide-arrow {
+    background: transparent;
+    border: none;
+    font-size: 2.5rem;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.testimonial-content .avatar {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.client-sub {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.quote {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* 12. Location UI Section */
+.location-section {
+    padding: 60px 10%;
+}
+
+.location-details-bar {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.location-details-bar strong {
+    display: block;
+    font-size: 14px;
+    color: #333;
+}
+
+.location-details-bar p {
+    color: #1456cb;
+    font-weight: 600;
+}
+
+.location-container {
+    display: flex;
+    gap: 30px;
+}
+
+.loc-left-img, .loc-right-map {
+    flex: 1;
+}
+
+.loc-left-img img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+.map-box {
+    background: #e5e3df;
+    height: 380px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+}
+
+.map-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid white;
+}
+
+.active-dot { top: 40%; left: 50%; background: red; }
+.dot-blue { top: 60%; left: 30%; background: #1456cb; }
+
+/* 13. Deep Comprehensive Multi-column Footer Layout */
+.main-footer {
+    background-color: #fcfcfc;
+    border-top: 1px solid #eee;
+    padding: 70px 10% 30px 10%;
+}
+
+.footer-top-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.footer-col {
+    flex: 1;
+}
+
+.brand-col {
+    flex: 2;
+}
+
+.brand-col h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.brand-col h3 span {
+    color: #2cb572;
+}
+
+.brand-col p {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-socials i {
+    color: #666;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footer-col h4 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #777;
+    font-size: 13px;
+    transition: color 0.2s;
+}
+
+.footer-col ul li a:hover {
+    color: #1456cb;
+}
+
+.footer-bottom {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+}
+
+/* Breakpoint for Responsiveness */
+@media (max-width: 992px) {
+    .features-section, .location-container, .brand-gallery, .footer-top-row {
+        flex-direction: column;
+    }
+    .products-grid, .news-grid, .collection-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
